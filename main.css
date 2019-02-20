@@ -1,0 +1,57 @@
+body {
+    background: whitesmoke;
+}
+
+
+.inputs {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background: lightgray;
+    border: 20px;
+    border-style: solid;
+    border-color: gray;
+    margin: 30px;
+}
+
+
+h1 {
+    font-size: 38px;
+    padding: 20px;
+}
+
+
+h2 {
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+
+#lower {
+    padding-top: 30px;
+}
+
+
+h3 {
+    font-size: 25px;
+}
+
+
+.Exercises {
+    font-size: 18px;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+
+#Ex1Lines {
+    padding: 5px;
+}
+
+
+#SighInButton {
+    padding-top: 10px;
+}

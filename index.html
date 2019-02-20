@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lesson18 Homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script defer src="main.js"></script>
+</head>
+
+
+<body>
+    <h1>Lesson18 Homework</h1>
+    <h2>Starting Info:</h2>
+    <div id="inputs">
+        <div id="startingInputs">
+        
+            <!-- Username and Password input -->
+            <div class="inputs" id="exercise1Password">
+                <h3 class="Exercises">Exercise1 Username and Password:</h3>
+                <h3>Enter Your Info</h3>
+                <div id="Ex1Lines1">
+                    <label for="username">Username:</label>
+                    <input type="text" v-model:value="username">
+                </div>
+                <div id="Ex1Lines2">
+                    <label for="pass">Password (8 characters minimum):</label>
+                    <input type="password" v-model:value="password" minlength="8" required>
+                </div>
+                <!-- <div id="SighInButton"><input type="submit" value="Sign in"></div> -->
+            </div>
+        
+            <!-- Checkbox input -->
+            <div class="inputs" id="exercise2Checkbox">
+                <h3 class="Exercises">Exercise2 Checkbox:</h3>
+                <h3>Enter Your Info</h3>
+                <p>Choose your monster's features:</p>
+                <div>
+                  <input type="checkbox" v-model:value="scales">
+                  <label for="scales">Scales</label>
+                </div>
+                <div>
+                  <input type="checkbox" v-model:value="horns">
+                  <label for="horns">Horns</label>
+                </div>
+            </div>
+        
+            <!-- Data input -->
+            <div class="inputs" id="exercise3Data">
+                <h3 class="Exercises">Exercise3 Data:</h3>
+                <h3>Enter Your Info</h3>
+                <label for="start">Start date:</label>
+                <input type="date" v-model:value="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2018-12-31">
+            </div>
+        
+        </div>
+        
+        
+        <h2 id="lower">Entered Info:</h2>
+        <div id="bindingInputs">
+        
+            <!-- Username and Password input -->
+            <div class="inputs" id="Ex1Lines1">
+                <h3 class="Exercises">Exercise1 Username and Password:</h3>
+                <h3>Your Entered Info</h3>
+                <p id="userPass">{{ username }}</p>
+                <p id="userPass">{{ password }}</p>
+            </div>
+        
+            <!-- Checkbox input -->
+            <div class="inputs">
+                <h3 class="Exercises">Exercise2 Checkbox:</h3>
+                <h3>Your Entered Info</h3>
+                <p id="check">{{  }}</p>
+            </div>
+        
+            <!-- Data input -->
+            <div class="inputs">
+                <h3 class="Exercises">Exercise3 Data:</h3>
+                <h3>Your Entered Info</h3>
+                <p id="data">{{  }}</p>
+            </div>
+        
+        </div>
+    </div>
+</body>
+
+
+</html>

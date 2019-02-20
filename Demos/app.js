@@ -9,5 +9,5 @@ const vue = new Vue({
         greet(name) {
             return `Welcome to my world ${name}`;
         }
-    }
+    },
 })
