@@ -4,6 +4,8 @@ body {
 
 
 .inputs {
+    display: flex;
+    flex-direction: column;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
@@ -27,11 +29,6 @@ h2 {
 }
 
 
-#lower {
-    padding-top: 30px;
-}
-
-
 h3 {
     font-size: 25px;
 }
@@ -39,6 +36,7 @@ h3 {
 
 .Exercises {
     font-size: 18px;
+    align-self: center;
 }
 
 
@@ -47,11 +45,26 @@ p {
 }
 
 
-#Ex1Lines {
+.userPassP {
     padding: 5px;
+    margin: 5px;
+    margin-bottom: 0px;
 }
 
 
-#SighInButton {
-    padding-top: 10px;
+.userPassIn {
+    margin-top: 0px;
+}
+
+
+.userPassLab {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+
+.spacingP {
+    padding: 2px;
+    border: 0px;
+    margin: 0px;
 }

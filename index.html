@@ -8,84 +8,122 @@
     <title>Lesson18 Homework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script defer src="https://unpkg.com/vue"></script>
     <script defer src="main.js"></script>
 </head>
 
 
 <body>
-    <h1>Lesson18 Homework</h1>
-    <h2>Starting Info:</h2>
-    <div id="inputs">
-        <div id="startingInputs">
-        
-            <!-- Username and Password input -->
-            <div class="inputs" id="exercise1Password">
-                <h3 class="Exercises">Exercise1 Username and Password:</h3>
-                <h3>Enter Your Info</h3>
-                <div id="Ex1Lines1">
-                    <label for="username">Username:</label>
-                    <input type="text" v-model:value="username">
-                </div>
-                <div id="Ex1Lines2">
-                    <label for="pass">Password (8 characters minimum):</label>
-                    <input type="password" v-model:value="password" minlength="8" required>
-                </div>
-                <!-- <div id="SighInButton"><input type="submit" value="Sign in"></div> -->
-            </div>
-        
-            <!-- Checkbox input -->
-            <div class="inputs" id="exercise2Checkbox">
-                <h3 class="Exercises">Exercise2 Checkbox:</h3>
-                <h3>Enter Your Info</h3>
-                <p>Choose your monster's features:</p>
-                <div>
-                  <input type="checkbox" v-model:value="scales">
-                  <label for="scales">Scales</label>
-                </div>
-                <div>
-                  <input type="checkbox" v-model:value="horns">
-                  <label for="horns">Horns</label>
-                </div>
-            </div>
-        
-            <!-- Data input -->
-            <div class="inputs" id="exercise3Data">
-                <h3 class="Exercises">Exercise3 Data:</h3>
-                <h3>Enter Your Info</h3>
-                <label for="start">Start date:</label>
-                <input type="date" v-model:value="trip-start"
-                    value="2018-07-22"
-                    min="2018-01-01" max="2018-12-31">
-            </div>
-        
+    <div>
+        <h1>Lesson18 Homework</h1>
+
+
+        <!-- Username and Password input -->
+        <div class="inputs" id="inputP">
+            <h2 class="Exercises">Exercise1 Username and Password:</h2>
+            <h3>Enter Your Info:</h3>
+            <label class="userPassLab" for="name">Username:</label>
+            <input class="userPassIn" type="text" id="name" v-model:value="userName">
+            <label class="userPassLab" class="userPassILab" for="pass">Password (8 characters minimum):</label>
+            <input class="userPassIn" id="pass" v-model:value="password">
+            <h3>Your Entered Info:</h3>
+            <p class="userPassP">Username: {{ userName }}</p>
+            <p class="userPassP">Password: {{ password }}</p>
         </div>
-        
-        
-        <h2 id="lower">Entered Info:</h2>
-        <div id="bindingInputs">
-        
-            <!-- Username and Password input -->
-            <div class="inputs" id="Ex1Lines1">
-                <h3 class="Exercises">Exercise1 Username and Password:</h3>
-                <h3>Your Entered Info</h3>
-                <p id="userPass">{{ username }}</p>
-                <p id="userPass">{{ password }}</p>
+
+
+        <!-- Checkbox input -->
+        <div class="inputs" id="inputCHB">
+            <h2 class="Exercises">Exercise2 Checkbox:</h2>
+            <h3>Enter up to ten 8 character long things to be put as checkboxes.</h3>
+            <div id="checkBoxEl">
+                <label for="CHB0">Checkbox0:</label>
+                <input type="text" id="CHB0" v-model:value="Checkbox0">
+                <p class="spacingP"></p>
+                <label for="CHB1">Checkbox1:</label>
+                <input type="text" id="CHB1" v-model:value="Checkbox1">
+                <p class="spacingP"></p>
+                <label for="CHB2">Checkbox2:</label>
+                <input type="text" id="CHB2" v-model:value="Checkbox2">
+                <p class="spacingP"></p>
+                <label for="CHB3">Checkbox3:</label>
+                <input type="text" id="CHB3" v-model:value="Checkbox3">
+                <p class="spacingP"></p>
+                <label for="CHB4">Checkbox4:</label>
+                <input type="text" id="CHB4" v-model:value="Checkbox4">
+                <p class="spacingP"></p>
+                <label for="CHB5">Checkbox5:</label>
+                <input type="text" id="CHB5" v-model:value="Checkbox5">
+                <p class="spacingP"></p>
+                <label for="CHB6">Checkbox6:</label>
+                <input type="text" id="CHB6" v-model:value="Checkbox6">
+                <p class="spacingP"></p>
+                <label for="CHB7">Checkbox7:</label>
+                <input type="text" id="CHB7" v-model:value="Checkbox7">
+                <p class="spacingP"></p>
+                <label for="CHB8">Checkbox8:</label>
+                <input type="text" id="CHB8" v-model:value="Checkbox8">
+                <p class="spacingP"></p>
+                <label for="CHB9">Checkbox9:</label>
+                <input type="text" id="CHB9" v-model:value="Checkbox9">
+                <p></p>
             </div>
-        
-            <!-- Checkbox input -->
-            <div class="inputs">
-                <h3 class="Exercises">Exercise2 Checkbox:</h3>
-                <h3>Your Entered Info</h3>
-                <p id="check">{{  }}</p>
+            <div id="checkBoxes">
+                <label class="checkBoxes" for="CHB0">0.</label> 
+                <input class="checkBoxes" id="CHB0" type="checkbox" v-model:value="checkBox0">
+                <label class="checkBoxes" for="CHB0">{{ Checkbox0 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB1">1.</label> 
+                <input class="checkBoxes" id="CHB1" type="checkbox" v-model:value="checkBox1">
+                <label class="checkBoxes" for="CHB1">{{ Checkbox1 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB2">2.</label> 
+                <input class="checkBoxes" id="CHB2" type="checkbox" v-model:value="checkBox2">
+                <label class="checkBoxes" for="CHB2">{{ Checkbox2 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB3">3.</label> 
+                <input class="checkBoxes" id="CHB3" type="checkbox" v-model:value="checkBox3">
+                <label class="checkBoxes" for="CHB3">{{ Checkbox3 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB4">4.</label> 
+                <input class="checkBoxes" id="CHB4" type="checkbox" v-model:value="checkBox4">
+                <label class="checkBoxes" for="CHB4">{{ Checkbox4 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB5">5.</label> 
+                <input class="checkBoxes" id="CHB5" type="checkbox" v-model:value="checkBox5">
+                <label class="checkBoxes" for="CHB5">{{ Checkbox5 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB6">6.</label> 
+                <input class="checkBoxes" id="CHB6" type="checkbox" v-model:value="checkBox6">
+                <label class="checkBoxes" for="CHB6">{{ Checkbox6 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB7">7.</label> 
+                <input class="checkBoxes" id="CHB7" type="checkbox" v-model:value="checkBox7">
+                <label class="checkBoxes" for="CHB7">{{ Checkbox7 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB8">8.</label> 
+                <input class="checkBoxes" id="CHB8" type="checkbox" v-model:value="checkBox8">
+                <label class="checkBoxes" for="CHB8">{{ Checkbox8 }}</label>
+                <p></p>
+                <label class="checkBoxes" for="CHB9">9.</label> 
+                <input class="checkBoxes" id="CHB9" type="checkbox" v-model:value="checkBox9">
+                <label class="checkBoxes" for="CHB9">{{ Checkbox9 }}</label>
+                <p></p>
             </div>
-        
-            <!-- Data input -->
-            <div class="inputs">
-                <h3 class="Exercises">Exercise3 Data:</h3>
-                <h3>Your Entered Info</h3>
-                <p id="data">{{  }}</p>
+        </div>
+
+
+        <!-- Data input -->
+        <div class="inputs" id="inputDA">
+            <h2 class="Exercises">Exercise3 Data:</h2>
+            <h3>Enter Your Info:</h3>
+            <div>
+                <label for="start">Start date:</label>
+                <input type="date" id="start" name="trip-start"
+                    v-model:value="date"
+                    min="2019-01-01" max="2019-12-31">
+                    <p>Entered Date: {{ date }}</p>
             </div>
-        
         </div>
     </div>
 </body>

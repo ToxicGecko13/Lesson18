@@ -6,8 +6,10 @@ const vue = new Vue({
         userName: '',
     },
     methods: {
-        greet(name) {
-            return `Welcome to my world ${name}`;
-        }
+        // greet(name) {
+        //     return `Welcome to my world ${name}`;
+        // }
     },
 })
+
+name
