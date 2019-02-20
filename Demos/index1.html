@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Hello World</title>
+    <script defer src="https://unpkg.com/vue"></script>
+    <script defer src="app.js"></script>
+</head>
+
+
+<body>
+    <h1>Vue Basics</h1>
+    <div id="app">
+        <h2>{{ title }}</h2>
+        <h3>{{ greet('Kenzie') }}</h3>
+        <a v-bind:href="url">link to google</a>
+        <h2></h2>
+        <label for="name">username:</label>
+        <input type="text" id="name" v-model:value="userName">
+        <p>{{ userName }}</p>
+    </div>
+    <h2>{{ title }}</h2>
+</body>
+
+
+</html>
